@@ -1,0 +1,19 @@
+<div class="fair-details">
+    <div class="bannerImg">
+        <img [src]="getfairDetails.bannerUrl"alt="">
+        <div class="info">
+        <h4>
+           {{getfairDetails.fairName}}
+        </h4>
+        <p>
+            <strong>Event Type:</strong>{{getfairDetails.type}}
+        </p>
+        <p>
+            <strong>Date Line:</strong> {{((getfairDetails.startDate * 1000)-(24 * 60 * 60 * 1000)|date)}}
+        </p>
+    </div>
+    <p [innerHTML]="getfairDetails.candidateDescription" class="p-4">
+
+    </p>
+    </div>
+</div>
